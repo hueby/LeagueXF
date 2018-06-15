@@ -3,8 +3,8 @@
     <StackLayout Padding="10" Orientation="Vertical" VerticalOptions="CenterAndExpand">
         <!-- Place new controls here -->
         <Label Text="League" XAlign="Center" VerticalOptions="StartAndExpand" HorizontalOptions="Center"/>
-        <Entry x:Name="userName" />
-        <Entry x:Name="password" />
+        <Entry x:Name="userName" IsSpellCheckEnabled="false" />
+        <Entry x:Name="password" IsPassword="true" />
 
         <Button x:Name="loginButton" Text="Login" />
 

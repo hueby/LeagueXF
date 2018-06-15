@@ -29,13 +29,13 @@ namespace LeagueXamarin.iOS
             LoadApplication(new App());
 
             Firebase.Core.App.Configure();
-            RootNode = Database.DefaultInstance.GetRootReference();
-            RootNode.GetChild("events").ObserveEvent(DataEventType.Value, (snapshot) =>
-            {
-                if(snapshot.Exists) {
-                    Console.WriteLine(snapshot.GetValue());
-                }
-            });
+            //RootNode = Database.DefaultInstance.GetRootReference();
+            //RootNode.GetChild("events").ObserveEvent(DataEventType.Value, (snapshot) =>
+            //{
+            //    if(snapshot.Exists) {
+            //        Console.WriteLine(snapshot.GetValue());
+            //    }
+            //});
 
             App.Login = new LoginService();
 
